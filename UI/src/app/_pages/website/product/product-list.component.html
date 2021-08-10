@@ -1,0 +1,22 @@
+<div class="client-form">
+    <section class="banner-2 bg_img" style="height: 80px;" data-background="./assets/images/banner/banner-2.jpg">
+        <div class="container">
+            <div class="banner-content-2">
+                <h1 class="title cl-white">{{name}}</h1>
+            </div>
+        </div>
+    </section>
+    <div class="call-in-section padding-bottom padding-top">
+        <div class="row justify-content-center mb-30-none">
+            <div class="col-md-2 col-lg-2" *ngFor="let product of products">
+                <div class="call-item">
+                    <h5 class="title">{{ product.name }}</h5>
+                    <p>Price: {{ product.price?.min}}</p>
+                    <button type="button" class="btn btn-info btn-sm" (click)="addToCart(product)">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<ngx-ui-loader></ngx-ui-loader>

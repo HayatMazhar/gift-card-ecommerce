@@ -1,0 +1,17 @@
+<section class="banner-2 bg_img" data-background="./assets/images/banner/banner-2.jpg">
+    <div class="container">
+        <div class="banner-content-2">
+            <h5 class="title cl-white">Introducing The Bamboo!</h5>
+            <p class=" cl-white"> Physical and digital gift cards delivered in bulk packages to recipients.</p>
+            <form class="search-form round">
+                <input type=" text " id="name " class=" " (input)="onSearchChange($event)" formControlName="searchText " maxlength="100 " placeholder="Start typing your search brands… " [ngClass]="{ 'is-invalid': submitted && f.searchText.errors} " />
+                <small class="form-text text-muted danger " *ngIf="submitted && f.searchText.errors " class="invalid-feedback ">
+                  <div *ngIf="f.searchText.errors.required ">
+                      Text is required
+                  </div>
+              </small>
+                <button type="button"><i class="flaticon-search "></i> <span class="d-none d-sm-inline-block ">Search</span></button>
+            </form>
+        </div>
+    </div>
+</section>

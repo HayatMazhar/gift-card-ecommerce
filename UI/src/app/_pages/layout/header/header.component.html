@@ -1,0 +1,49 @@
+<!--============= ScrollToTop Section Starts Here =============-->
+<!-- <div class="overlayer" id="overlayer">
+    <div class="loader">
+        <div class="loader-inner"></div>
+    </div>
+</div> -->
+<a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+<div class="overlay"></div>
+<!--============= ScrollToTop Section Ends Here =============-->
+
+<!--============= Header Section Starts Here =============-->
+<header class="header-section">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="">
+                <div class="logo">
+                    <a href="/catalog">
+                        <img src="./assets/images/logo/logo-bambo.png" class="logo" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="/catalog">Catalog</a>
+                </li>
+                <li>
+                    <a href="/order-history">Order History</a>
+
+                </li>
+
+                <li class="ml-5">
+                    <a href="/accounts">Accounts</a>
+                </li>
+
+                <li>
+                    <button class="btn btn-success" type="submit" routerLink="/cart-detail">
+                  <i class="fa fa-shopping-cart"><b> {{ (shoppingItems$ | async)?.length }}</b></i>
+                </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+<!--============= Header Section Ends Here =============-->
+<!--============= Header Section Ends Here =============-->

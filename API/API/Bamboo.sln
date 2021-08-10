@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{436167B8-E4D2-470F-B1FB-EC94A7BAAA13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B88B5802-F851-48F9-9D0D-4680A54E8D48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D9585BA9-1ABA-4092-B0BD-A7BBD059455D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{36DFB803-E3B1-467D-920D-D96CCCD500C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bamboo.Api", "Bamboo.Api\Bamboo.Api.csproj", "{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bamboo.Application", "Bamboo.Application\Bamboo.Application.csproj", "{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bamboo.Domain", "Bamboo.Domain\Bamboo.Domain.csproj", "{2D864B74-2DEC-46A5-98CC-547F30A44904}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bamboo.DataAccess", "Bamboo.DataAccess\Bamboo.DataAccess.csproj", "{37611179-D021-41E4-8226-406394F0FFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D864B74-2DEC-46A5-98CC-547F30A44904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D864B74-2DEC-46A5-98CC-547F30A44904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D864B74-2DEC-46A5-98CC-547F30A44904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D864B74-2DEC-46A5-98CC-547F30A44904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37611179-D021-41E4-8226-406394F0FFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37611179-D021-41E4-8226-406394F0FFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37611179-D021-41E4-8226-406394F0FFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37611179-D021-41E4-8226-406394F0FFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B88B5802-F851-48F9-9D0D-4680A54E8D48} = {436167B8-E4D2-470F-B1FB-EC94A7BAAA13}
+		{D9585BA9-1ABA-4092-B0BD-A7BBD059455D} = {436167B8-E4D2-470F-B1FB-EC94A7BAAA13}
+		{36DFB803-E3B1-467D-920D-D96CCCD500C5} = {436167B8-E4D2-470F-B1FB-EC94A7BAAA13}
+		{24F2F1B2-8DAA-4491-AC6B-8EF975F58BB9} = {B88B5802-F851-48F9-9D0D-4680A54E8D48}
+		{E680C2FD-1AD9-46BA-9D12-F2B42E924A7C} = {D9585BA9-1ABA-4092-B0BD-A7BBD059455D}
+		{2D864B74-2DEC-46A5-98CC-547F30A44904} = {D9585BA9-1ABA-4092-B0BD-A7BBD059455D}
+		{37611179-D021-41E4-8226-406394F0FFA1} = {36DFB803-E3B1-467D-920D-D96CCCD500C5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06F0E0FF-AAB7-4E79-9254-E68EF8C36B5A}
+	EndGlobalSection
+EndGlobal

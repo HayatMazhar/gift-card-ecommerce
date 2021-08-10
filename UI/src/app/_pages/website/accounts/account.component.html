@@ -1,0 +1,22 @@
+<section class="banner-2 bg_img" style="height: 80px;" data-background="./assets/images/banner/banner-2.jpg">
+    <div class="container">
+        <div class="banner-content-2">
+            <h1 class="title cl-white">Accounts</h1>
+        </div>
+    </div>
+</section>
+<div class="call-in-section padding-bottom padding-top">
+    <div class="row justify-content-center mb-30-none">
+        <div class="col-md-2 col-lg-2" *ngFor="let acc of accounts">
+            <div class="call-item">
+                <h5 class="title">Account ID : {{ acc.id }}</h5>
+                <p>Currency: {{ acc.currency}}</p>
+                <p>Price: {{ acc.balance}}</p>
+                <p *ngIf="acc.isActive">Status: Active</p>
+                <p *ngIf="!acc.isActive">Status: Inactive</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ngx-ui-loader></ngx-ui-loader>

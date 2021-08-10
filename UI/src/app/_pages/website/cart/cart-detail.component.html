@@ -1,0 +1,66 @@
+<div class="client-form">
+    <section class="banner-2 bg_img" style="height: 80px;" data-background="./assets/images/banner/banner-2.jpg">
+        <div class="container">
+            <div class="banner-content-2">
+                <h1 class="title cl-white">Cart Detail</h1>
+            </div>
+        </div>
+    </section>
+    <div class="call-in-section padding-bottom padding-top">
+        <div class="row justify-content-center mb-30-none">
+
+            <div class="col-md-12" *ngIf="!isOrderCreated && !items.length">
+                <h5 style="margin-bottom: 20px; text-align: center;">Your cart is empty!</h5>
+            </div>
+            <ng-container *ngIf="(shoppingItems$ | async)?.length">
+                <table class="table table-bordered" style="margin: 0px 200px  0px">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let item of shoppingItems$ | async">
+                            <td>{{ item.product.name }}</td>
+                            <td>
+                                <select (change)="onQuantityChange(item)" [(ngModel)]="item.quantity"> <option [value]="quantity" *ngFor="let quantity of quantities">{{ quantity }}</option></select>
+                            </td>
+                            <td>{{ item.price}} {{ item.product?.price?.currencyCode}}</td>
+                            <td><a style="cursor: pointer;" (click)="removeItemFromCart(item.id)" title="Remove"><i class="fa fa-times" aria-hidden="true" style="color: red;"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Subtotal</b></td>
+                            <td></td>
+                            <td><b>{{ cartSubtotal }} Total</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ng-container>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-12" *ngIf="(shoppingItems$ | async)?.length == 0">
+                <button type="button" class="btn btn-primary" routerLink="/catalog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Continue Shopping</button>
+            </div>
+
+            <div class="col-md-6" *ngIf="(shoppingItems$ | async)?.length != 0">
+                <button type="button" class="btn btn-primary" routerLink="/catalog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Continue Shopping</button>
+            </div>
+
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" (click)="proceedToCheckout()" *ngIf="(shoppingItems$ | async)?.length">Proceed Checkout</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
